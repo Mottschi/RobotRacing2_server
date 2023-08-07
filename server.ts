@@ -1,5 +1,7 @@
 import { Server } from 'socket.io';
 
+const PORT = 3000;
+
 const rows = 10;
 const columns = 10;
 
@@ -79,5 +81,5 @@ io.on('connection', (socket) => {
     console.log(players);
 });
 
-io.listen(3001);
+io.listen(PORT);
 console.log('listening');
